@@ -30,9 +30,6 @@
 .bouton_nav a:hover{
     border-top: 2px #0065FC solid;
 }
-h1 {
-    font-weight: bold
-}
 p {
     color: black;
 }
@@ -41,18 +38,107 @@ p {
     flex-direction: column;
     justify-content: flex-start;
 }
+.container_outils_recherche h1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+
+}
+.container_outils_recherche p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.78px;
+    padding-top: 8px;
+}
 .container_barre_recherche{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    height: 49px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 32px;
+}
+.bouton_geoloc{
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bouton_geoloc i{
+    width:14px;
+    height:18px;
+}
+.champ_recherche_ville {
+    border: 1px #F2F2F2 solid;
+    height:47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bouton_recherche{
+    background-color: #0065FC;
+    height: 49px;
+    width: 132px;
+    border-radius: 0px 15px 15px 0px;
+    border-color: #0065FC;
+    color: white;
+    font-size: 18px;
+    line-height: 21.13px;
+    text-align: center;
+}
+.champ_recherche_ville p input {
+    border:none;
+    height:21px;
+    margin:17px;
+}
+#lieu::placeholder{
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
 }
 .container_filtres{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    width: 914px;
+    padding-left: 7px;
+    font-weight: 700;
 }
-.bouton_geoloc{
-    background-color: grey;
-    width: 50px;
-    height: 49px;
+.container_filtres h2{
+    font-size: 18px;
+    line-height: 21.13px;
+    text-align: center;
+}
+.boutons_filtre button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-color: #D9D9D9;
+    border-radius: 25px;
+    height: 50px;
+}
+.boutons_filtre button p{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 19.96px;
+    text-align: center;
+}
+.boutons_filtre button i{
+    color: #0065FC;
+    padding-right: 10px;
+}
+.fa-money-bill-wave{
+    width: 22px;
+    height: 16.26px;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
