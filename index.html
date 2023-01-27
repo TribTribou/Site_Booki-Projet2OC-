@@ -1,17 +1,286 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Accueil Booki</title>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script src="https://kit.fontawesome.com/3b4ed1cf53.js" crossorigin="anonymous"></script>
-    </head>
+<html lang="fr" class="page">
     <body>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <i class="fa-sharp fa-solid fa-house"></i>
-        <p>En plein centre-ville ou en pleine nature</p>
+        <header class="head">
+            <meta charset="utf-8">
+            <title>Accueil Booki</title>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+            <link href="css/style.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <script src="https://kit.fontawesome.com/3b4ed1cf53.js" crossorigin="anonymous"></script>
+            <div class="logo_booki">
+                <img src="images/logo/Booki.png" alt="Logo Booki"/>
+            </div>
+            <nav>
+                <ul>
+                    <li class="liste">
+                        <hebergements class="bouton_nav">
+                            <a href="#ancre_hebergements">Hébergements</a>
+                        </hebergements>
+                        <activites class="bouton_nav">
+                           <a href="#ancre_activites">Activités</a>
+                        </activites>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="outils_recherche">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <div class="container_outils_recherche">
+                    <div class="container_barre_recherche">
+                        <div class="bouton_geoloc">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <form method="get" action="" class="champ_recherche_ville">
+                            <p>
+                                <input type="text" placeholder="Marseille,France">
+                            </p>
+                        </form>
+                        <button class="bouton_recherche">
+                            Rechercher
+                        </button>
+                    </div>
+                    <div class="container_filtres">
+                        <h2 class="titre_filtres">
+                            Filtres
+                        </h2>
+                        <button class="bouton_econom">
+                            Économique
+                        </button>
+                        <button class="bouton_familial">
+                            Familial
+                        </button>
+                        <button class="bouton romantique">
+                            Romantique
+                        </button>
+                        <button class="bouton_animaux">
+                            Animaux autorisés
+                        </button>
+                    </div>
+                    <div class="container_info_sup">
+                        <div class="logo_info">
+        
+                        </div>
+                        <p>Plus de "nombrelogements" logements sont disponible dans cette ville</p>
+                    </div>
+                </div>
+            </section>
+            <section id="section_articles_hebergements">
+                <h2 id="ancre_hebergements">
+                    Hébergements à "Nom_ville"
+                </h2>
+                <article>
+                    <div id="article1">
+                        <div class="card">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" style="width:20%">
+                            <div class="container">
+                              <h4><b>Auberge La Canebière</b></h4>
+                              <p>Nuit à partir de 25€</p>
+                              <div>
+    
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div id="article2">
+                        <div class="card">
+                            <img src="" alt="" style="width:100%">
+                            <div class="container">
+                              <h3><b>Hôtel du port</b></h3>
+                              <p>Nuit à partir de 52€</p>
+                              <div>
+    
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article3">
+                        <div class="card">
+                            <img src="" alt="" style="width:100%">
+                            <div class="container">
+                              <h3><b></b></h3>
+                              <p></p>
+                              <div>
+    
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article4">
+                        <div class="card">
+                            <img src="" alt="" style="width:100%">
+                            <div class="container">
+                              <h3><b></b></h3>
+                              <p></p>
+                              <div>
+    
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article5">
+                        <div class="card">
+                            <img src="" alt="" style="width:100%">
+                            <div class="container">
+                              <h3><b></b></h3>
+                              <p></p>
+                              <div>
+    
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article6">
+                        <div class="card">
+                            <img src="" alt="" style="width:100%">
+                            <div class="container">
+                              <h3><b></b></h3>
+                              <p></p>
+                              <div>
+    
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div id="bouton_afficher">
+    
+                </div>
+            </section>
+            <section>
+                <h2>
+                    Les plus populaires
+                </h2>
+                <article id="article1">
+                    <image>
+        
+                    </image>
+                    <div>
+                        <h3>
+                            Hôtel Le soleil du matin
+                        </h3>
+                        <p>
+                            Nuit à partir de 128€
+                        </p>
+                        <div>
+        
+                        </div>
+                    </div>
+                </article>
+                <article id="article2">
+                    <image>
+        
+                    </image>
+                    <div>
+                        <h3>
+                            Chambres d'hôtes Au coeur de l'eau
+                        </h3>
+                        <p>
+                            Nuit à partir de 71€
+                        </p>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </article>
+                <article id="article3">
+                    <image>
+        
+                    </image>
+                    <div class="description">
+                        <h3>
+                            Hôtel Bleu et Blanc
+                        </h3>
+                        <p>
+                            Nuit à partir de 68€
+                        </p>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <h2 id="ancre_activites">
+                    Activités à "Nom_ville"
+                </h2>
+                <div class="container_activites">
+                    <article id="activite1">
+                        <div class="card">
+                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" style="width:30%">
+                            <div class="container">
+                              <h3><b>Vieux-Port</b></h3>
+                            </div>
+                        </div> 
+                    </article>
+                    <article id="activite2">
+                        <div class="card">
+                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" style="width:30%">
+                            <div class="container">
+                                <h3><b>Fort de Pomègues</b></h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="activite3">
+                        <div class="card">
+                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" style="width:30%">
+                            <div class="container">
+                              <h3><b>Parc national des Calanques</b></h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="activite4">
+                        <div class="card">
+                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" style="width:30%">
+                            <div class="container">
+                              <h3><b>Notre-Dame-de-la-Garde</b></h3>
+                            </div>
+                          </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="container_footer">
+            <div id="bloc_propos">
+                <h2>
+                    À propos
+                </h2>
+                <button class="bouton_fonctionnementsite">
+                    Fonctionnement du site
+                </button>
+                <button class="bouton_conditionsgenerales">
+                    <!-- Peut être n'utiliser qu'une classe "bouton_" pour tout les button et changer le reste en simple id-->
+                    Conditions générales
+                </button>
+                <button class="bouton_donneesconfidentialite">
+                    Données et confidentialité
+                </button>
+            </div>
+            <div id="bloc_noshebergements">
+                <h2>
+                    Nos hébergements
+                </h2>
+                <button class="bouton_chartequalite">
+                    Charte qualité
+                </button>
+                <button class="bouton_proposervotrehotel">
+                    Proposer votre hôtel
+                </button>
+            </div>
+            <div id="bloc_assistance">
+                <h2>
+                    Assistance
+                </h2>
+                <button class="bouton_centreaide">
+                    Centre d'aide
+                </button>
+                <button class="bouton_nouscontacter">
+                    Nous contacter
+                </button>
+            </div>
+        </footer>
     </body>
 </html>
