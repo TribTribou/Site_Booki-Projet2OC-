@@ -1,20 +1,19 @@
 .page{
     font-family: 'Raleway', sans-serif;
     max-width: 1400px;
+    padding-left: 55px;
 }
 .logo_booki img{
     height: 19px;
-    padding-top: 44px;
+    width: 61px;
     overflow:hidden;
 }
-.head{
+.header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 115px;
-    padding-left: 55px;
-    padding-bottom: 63px;
+    height: 126px;
 }
 .liste{
     display: flex;
@@ -22,14 +21,13 @@
     font-size:large;
     margin-right:77px;
 }
-.bouton_nav{
-    size: 162px;
+.bouton_nav a{
     font-size: 19px;
     padding-top: 48px;
     margin-left: 67px;
     color: #0065FC solid;
 }
-.bouton_nav:hover {
+.bouton_nav a:hover{
     border-top: 2px #0065FC solid;
 }
 h1 {
