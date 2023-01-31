@@ -2,6 +2,7 @@
     font-family: 'Raleway', sans-serif;
     max-width: 1400px;
     padding-left: 55px;
+    background-color: white;
 }
 .logo_booki img{
     height: 19px;
@@ -24,7 +25,7 @@
 .liste_nav a:visited{
     color: black;
     text-decoration-line: underline;
-    text-decoration-color: white ;
+    text-decoration-color: white;
 }
 .liste_nav a{
     font-size: 19px;
@@ -234,7 +235,7 @@ p {
     font-size: 16px;
     position: relative;
 }
-.card > a,.card_pop > a {
+.card > a,.card_pop > a,.card_activ > a {
     position: absolute;
     top: 0;
     right: 0;
@@ -300,4 +301,56 @@ p {
 }
 .fas {
     color: #F2F2F2;
+}
+.container_activites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card_activ {
+    width: 302px;
+    height: 444px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 15px;
+    background-color: white;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.card_activ img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 0px;
+}
+.container_text_activ {
+    margin-left: 19px;
+}
+.container_footer {
+    display: flex;
+    justify-content: space-around;
+    width: 1339px;
+    height: 225px;
+    font-size:small;
+    background-color: #F2F2F2;
+    margin-top: 60px;
+}
+.bloc_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 25px;
+    margin-left: -190px;
+}
+.bloc_footer button {
+    border: none;
+    padding-bottom: 12px;
+    margin-left: -5px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
 }
