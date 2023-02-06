@@ -3,6 +3,7 @@
     max-width: 1400px;
     padding-left: 55px;
     background-color: white;
+    overflow-x: hidden;
 }
 .logo_booki img{
     height: 19px;
@@ -24,10 +25,10 @@
 }
 .liste_nav a:visited{
     color: black;
-    text-decoration-line: underline;
-    text-decoration-color: white;
+    text-decoration: none;
 }
 .liste_nav a{
+    text-decoration: none;
     font-size: 19px;
     padding-top: 48px;
     margin-left: 67px;
@@ -101,9 +102,12 @@ p {
     line-height: 21.13px;
     text-align: center;
 }
+.bouton_recherche i {
+    display: none;
+}
 .champ_recherche_ville p input {
     border:none;
-    height:21px;
+    height:48px;
     margin:17px;
 }
 #lieu::placeholder{
@@ -128,25 +132,24 @@ p {
     text-align: center;
     padding-right: 42px;
 }
-.boutons_filtre button {
+.bouton_filtre {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    background-color: white;
-    border-color: #D9D9D9;
     border-radius: 25px;
     height: 50px;
     margin-left: 10px;
+    border: 2px solid;
+    border-color: #D9D9D9;
 }
-.boutons_filtre button p{
+.boutons_filtre div p{
     font-size: 17px;
     font-weight: bold;
     line-height: 19.96px;
     margin-bottom: 20px;
     margin-right: 10px;
 }
-.boutons_filtre button i{
+.boutons_filtre div i{
     margin-right: 10px;
     margin-left: 20px;
     margin-bottom: -5px;
@@ -154,7 +157,7 @@ p {
 .fa-person {
     margin-right: 4.86px;
 }
-.container_filtres button:hover {
+.bouton_filtre:hover {
     background-color: #DEEBFF;
 }
 .container_info_sup {
@@ -357,6 +360,12 @@ p {
     font-weight: 400;
     line-height: 18px;
 }
+.fa-location-dot {
+    color: black;
+}
+.fa-magnifying-glass {
+    color: white;
+}
 @media screen and (max-width: 992px) {
     .section_articles_hebergements{
         display: flex;
@@ -421,4 +430,185 @@ p {
     .bloc_footer button{
         font-size: small;
     }
+}
+@media screen and ( max-width: 768px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 130px;
+        padding-bottom: 30px;
+    }
+    .logo_booki{
+        display: flex;
+        justify-self: center;
+        margin-top: 21px;
+        margin-bottom: 40px;
+        margin-left: 1%;
+    }
+    .bloc_nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-right: 0px;
+        font-size: small;
+    }
+    .liste_nav{
+        width: 100%;
+    }
+    .liens_nav {
+        width: 100%;
+        padding-bottom: 23px;
+    }
+    ul {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .liste_nav a{
+        margin-left: 0px;
+    }
+    .liens_nav a:hover{
+        border-top: none;
+    }
+    .liens_nav:hover {
+        border-bottom: 2px #0065FC solid;
+    }
+    .page {
+        font-size: medium;
+    }
+    h1 {
+        font-size: large;
+    }
+    .container_barre_recherche{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        padding-left: 10%;
+    }
+    .bouton_geoloc{
+        width: 10%;
+    }
+    .bouton_recherche{
+        width: 12%;
+    }
+    .bouton_recherche b{
+        display: none;
+    }
+    .bouton_recherche i {
+        display: inline;
+    }
+    .container_filtres {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+    }
+    .boutons_filtre {
+        width: 500px;
+        height: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        padding-left: 130px;
+    }
+    .boutons_filtre div p{
+        font-size: small;
+    }
+    .boutons_filtre div {
+        width:160px;
+    }
+    .section_articles_hebergements {
+        width: 90%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-left: 15%;
+    }
+    .section_hebergements_ville {
+        width: 80%;
+        height: 1500px;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 0px;
+        background-color: white;
+        border-radius: 0px;
+    }
+    .section_hebergements_ville h2{
+        width: 90%;
+        margin-top: 26px;
+        padding-bottom: 20px;
+        justify-self: center;
+    }
+    .articles_hebergements_ville
+    {
+        width: 90%;
+        height: 90%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .bouton_afficher {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+        height: 200px;
+    }
+    .container_articles_populaires {
+        width: 80%;
+        height: 580px;
+        flex-direction: column;
+        border-radius: 0px;
+    }
+    .articles_populaires {
+        flex-direction: column;
+        width: 80%;
+        justify-content: space-between;
+    }
+    .card_pop {
+        width: 100%;
+        height: 144px;
+        margin-right: 0px;
+    }
+    .container_article_pop_description {
+        width: 55%;
+    }
+    .card_pop img {
+        width: 150px;
+    }
+    .section_activités {
+        flex-direction: column;
+        width: 90%;
+        height: 1300px;
+        margin-left: 15%;
+    }
+    .section_activités h2 {
+        width: 37%;
+        align-self: center;
+    }
+    .container_activites {
+        flex-direction: column;
+        width: 80%;
+        height: 1200px;
+    }
+    .card_activ {
+        width: 100%;
+    }
+    .container_footer {
+        flex-direction: column;
+        align-content: flex-start;
+        width: 90%;
+        height: 600px;
+        margin-left: 5%;
+    }
+    .bloc_footer {
+        margin-left: 10%;
+        margin-top: 0px;
+        font-size: medium;
+    }
+    .bloc_footer button {
+        font-size: medium;
+    }
+
+
 }

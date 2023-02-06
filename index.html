@@ -9,23 +9,16 @@
     <script src="https://kit.fontawesome.com/3b4ed1cf53.js" crossorigin="anonymous"></script>
     <body>
         <header class="header">
-            <meta charset="utf-8">
-            <title>Accueil Booki</title>
-            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-            <link href="css/style.css" rel="stylesheet">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <script src="https://kit.fontawesome.com/3b4ed1cf53.js" crossorigin="anonymous"></script>
             <div class="logo_booki">
                 <img src="images/logo/Booki.png" alt="Logo Booki"/>
             </div>
-            <nav>
+            <nav class="bloc_nav">
                 <ul>
                     <li class="liste_nav">
-                        <div>
+                        <div class="liens_nav">
                             <a href="#ancre_hebergements">Hébergements</a>
                         </div>
-                        <div>
+                        <div class="liens_nav">
                             <a href="#ancre_activites">Activités</a>
                         </div>
                     </li>
@@ -47,6 +40,7 @@
                             </p>
                         </form>
                         <button class="bouton_recherche">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                             <b>Rechercher</b>
                         </button>
                     </div>
@@ -55,22 +49,22 @@
                             Filtres
                         </h2>
                         <div class="boutons_filtre">
-                            <button class="bouton_econom">
+                            <div class="bouton_filtre">
                                 <i class="fa-solid fa-money-bill-wave fa-lg"></i>
                                 <p>Économique</p>
-                            </button>
-                            <button class="bouton_familial">
+                            </div>
+                            <div class="bouton_filtre">
                                 <i class="fa-solid fa-person fa-lg"></i>
                                 <p>Familial</p>
-                            </button>
-                            <button class="bouton romantique">
+                            </div>
+                            <div class="bouton_filtre">
                                 <i class="fa-solid fa-heart fa-lg"></i>
                                 <p>Romantique</p>
-                            </button>
-                            <button class="bouton_animaux">
+                            </div>
+                            <div class="bouton_filtre">
                                 <i class="fa-solid fa-dog fa-lg"></i>
                                 <p>Animaux autorisés</p>
-                            </button>
+                            </div>
                         </div>
                     </div>
                     <div class="container_info_sup">
@@ -262,7 +256,7 @@
                     </div>
                 </div>
             </section>
-            <section id="section_activités">
+            <section class="section_activités">
                 <h2 id="ancre_activites">
                     Activités à Marseille
                 </h2>
@@ -315,7 +309,6 @@
                     Fonctionnement du site
                 </button>
                 <button class="bouton_conditionsgenerales">
-                    <!-- Peut être n'utiliser qu'une classe "bouton_" pour tout les button et changer le reste en simple id-->
                     Conditions générales
                 </button>
                 <button class="bouton_donneesconfidentialite">
