@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr" class="page"> <!-- Classe pour pouvoir définir la largeur maximum et la marge de la page entière-->
+<html lang="fr" class="page"> 
+    <!-- Classe pour pouvoir définir la largeur maximum et la marge de la page entière-->
     <meta charset="utf-8">
     <title>Accueil Booki</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -8,25 +9,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/3b4ed1cf53.js" crossorigin="anonymous"></script>
     <body>
-        <header class="header"> <!-- Bloc header pour définir les propriétes css nécessaires concercnant le logo et le bloc navigation-->
-            <div class="logo_booki"> <!-- bloc logo pour le positionnement-->
+        <header class="header"> 
+            <!-- Bloc header pour définir les propriétes css nécessaires concercnant le logo et le bloc navigation-->
+            <div class="logo_booki"> 
+                <!-- bloc logo pour le positionnement-->
                 <img src="images/logo/Booki.png" alt="Logo Booki">
             </div>
-            <nav class="bloc_nav"> <!-- bloc navigation pour le positionnement par rapport au logo-->
+            <nav class="bloc_nav"> 
+                <!-- bloc navigation pour le positionnement par rapport au logo-->
                 <ul>
-                    <li class="liste_nav"> <!-- bloc intérieur navigation pour le positionnement des éléments intérieurs-->
-                        <div class="liens_nav"> <!-- classe pour appliquer différents effets -->
-                            <a href="#ancre_hebergements">Hébergements</a> <!-- Lien vers l'ancre Hebergement-->
+                    <li class="liste_nav"> 
+                        <!-- bloc intérieur navigation pour le positionnement des éléments intérieurs-->
+                        <div class="liens_nav"> 
+                            <!-- classe pour appliquer différents effets -->
+                            <a href="#ancre_hebergements">Hébergements</a> 
+                            <!-- Lien vers l'ancre Hebergement-->
                         </div>
-                        <div class="liens_nav"> <!-- -->
-                            <a href="#ancre_activites">Activités</a> <!-- Lien vers l'ancre Activité -->
+                        <div class="liens_nav">
+                            <a href="#ancre_activites">Activités</a> 
+                            <!-- Lien vers l'ancre Activité -->
                         </div>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section id="outils_recherche"> <!-- L'id me sert de repère pour m'indiquer de quelle section il s'agit -->
+            <section id="outils_recherche"> 
+                <!-- L'id me sert de repère pour m'indiquer de quelle section il s'agit -->
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
                 <div class="container_outils_recherche"> <!-- Bloc pour les différents outils; Barre de recherche avec champ de saisie, Filtres + infos supplémentaires -->
@@ -73,12 +82,15 @@
                     </div>
                 </div>
             </section>
-            <section class="section_articles_hebergements"> <!-- Bloc contenant toute la section concernant les hébergements par ville et par popularité-->
+            <section class="section_articles_hebergements"> 
+                <!-- Bloc contenant toute la section concernant les hébergements par ville et par popularité-->
                 <div class="section_hebergements_ville"> <!-- Bloc contenant toute la section des hébergements par ville dont le titre-ancre Hébergements et les cartes de logements -->
-                    <h2 id="ancre_hebergements"><!--Ancre hébergements vers laquelle le lien de navigation du même nom redirige-->
+                    <h2 id="ancre_hebergements">
+                        <!--Ancre hébergements vers laquelle le lien de navigation du même nom redirige-->
                         Hébergements à Marseille
                     </h2>
-                    <div class="articles_hebergements_ville"> <!-- Bloc contenant les cartes des hébergements selon la ville recherchée-->
+                    <div class="articles_hebergements_ville"> 
+                        <!-- Bloc contenant les cartes des hébergements selon la ville recherchée-->
                         <article id="article1"> <!-- L'id me sert de repère pour savoir quel est l'article en question, pour gérer le positionnement-->
                             <div class="card"> <!-- Classe Carte des hébergements par ville, chaque article sera constitué de cette carte qui définit l'agencement de chaque article. La carte est composée de l'image de l'hébergement, d'un texte descriptif et d'une notation en étoiles-->
                                 <a href="#"></a> <!--Technique pour que toute la carte soit cliquable et redirige vers la page de l'article en question. Vide puisqu'il s'agit de la 1ere version du site-->
@@ -182,20 +194,24 @@
                             </div>
                         </article>
                     </div>
-                    <div class="bouton_afficher"> <!-- Bouton-texte "Afficher Plus" pour pouvoir agrandir le bloc contenant les résultats de recherche et augmenter le nombre de résultats affichés. Non fonctionnel pour cette version-->
+                    <div class="bouton_afficher"> 
+                        <!-- Bouton-texte "Afficher Plus" pour pouvoir agrandir le bloc contenant les résultats de recherche et augmenter le nombre de résultats affichés. Non fonctionnel pour cette version-->
                         <p>
                             <b>Afficher plus</b>
                         <p>
                     </div>
                 </div>
-                <div class="container_articles_populaires"> <!--Bloc contenant les cartes des hébergements les plus populaires-->
-                    <div class="container_h2_logo"> <!-- Titre situé avant les résultats accompagné d'un icone-->
+                <div class="container_articles_populaires"> 
+                    <!--Bloc contenant les cartes des hébergements les plus populaires-->
+                    <div class="container_h2_logo"> 
+                        <!-- Titre situé avant les résultats accompagné d'un icone-->
                         <h2>
                             Les plus populaires
                         </h2>
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <div class="articles_populaires"> <!-- Bloc contenant uniquement les cartes d'hébergements populaires-->
+                    <div class="articles_populaires"> 
+                        <!-- Bloc contenant uniquement les cartes d'hébergements populaires-->
                         <article id="article1_populaire"> <!-- L'id me sert de repère-->
                             <div class="card_pop"> <!-- Classe carte d"hébergements populaires. Classe différente de celle des hébergements par ville car nécessite des réglages diférents-->
                                 <a href="#"></a>
@@ -256,13 +272,18 @@
                     </div>
                 </div>
             </section>
-            <section class="section_activités"> <!-- Bloc contenant toute la section des Activités, comprenant d'abord le titre-ancre "Activités" suivi du bloc contenant les cartes d'activités-->
-                <h2 id="ancre_activites"> <!-- Titre-ancre "Activités" vers lequel le bouton de navigation du même nom redirige-->
+            <section class="section_activités"> 
+                <!-- Bloc contenant toute la section des Activités, comprenant d'abord le titre-ancre "Activités" suivi du bloc contenant les cartes d'activités-->
+                <h2 id="ancre_activites"> 
+                    <!-- Titre-ancre "Activités" vers lequel le bouton de navigation du même nom redirige-->
                     Activités à Marseille
                 </h2>
-                <div class="container_activites"> <!-- Bloc contenant uniquement les cartes d'activités-->
-                    <article id="activite1"> <!--L'id sert de repère-->
-                        <div class="card_activ"> <!--Carte spécifique aux activités. La composition et les fonctionnalités sont similaire aux cartes précédentes excepté la description ne contenant que le titre, et pas de note.-->
+                <div class="container_activites"> 
+                    <!-- Bloc contenant uniquement les cartes d'activités-->
+                    <article id="activite1"> 
+                        <!--L'id sert de repère-->
+                        <div class="card_activ"> 
+                            <!--Carte spécifique aux activités. La composition et les fonctionnalités sont similaire aux cartes précédentes excepté la description ne contenant que le titre, et pas de note.-->
                             <a href="#"></a>
                             <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port">
                             <div class="container_text_activ">
@@ -300,12 +321,15 @@
                 </div>
             </section>
         </main>
-        <footer class="container_footer"> <!-- Bloc contenant tout le footer-->
-            <div class="bloc_footer"> <!-- Classe qui me sert de modèle pour les 3 parties ("A propos", "Nos hébergements" et "Assistance"). Le bloc est composé du titre suivi par les titres-liens de redirections. Ceux-ci sont non-fonctionnel pour cette version-->
+        <footer class="container_footer"> 
+            <!-- Bloc contenant tout le footer-->
+            <div class="bloc_footer"> 
+                <!-- Classe qui me sert de modèle pour les 3 parties ("A propos", "Nos hébergements" et "Assistance"). Le bloc est composé du titre suivi par les titres-liens de redirections. Ceux-ci sont non-fonctionnel pour cette version-->
                 <h2>
                     À propos
                 </h2>
-                <button class="bouton_fonctionnementsite"> <!-- Ici les classes me servent pour la disposition des éléments-->
+                <button class="bouton_fonctionnementsite"> 
+                    <!-- Ici les classes me servent pour la disposition des éléments-->
                     Fonctionnement du site
                 </button>
                 <button class="bouton_conditionsgenerales"> 

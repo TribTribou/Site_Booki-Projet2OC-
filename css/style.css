@@ -1,4 +1,5 @@
 .page{
+    /* Réglages généraux pour toute la page */
     font-family: 'Raleway', sans-serif;
     max-width: 1400px;
     padding-left: 55px;
@@ -11,6 +12,9 @@
     overflow:hidden;
 }
 .header{
+    /* Le logo est placé sur la gauche tandis que les boutons de navigation sont tout deux situés sur la droite. 
+    Le survol des éléments de navigation génère une barre bleue au dessus et le texte devient bleu également.
+    La décoration de liens visités a été ajustée */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,6 +47,11 @@ p {
     color: black;
 }
 .container_outils_recherche{
+    /* Ici on dispose le titre principal de la page et son texte associé, 
+    puis les éléments de recherche; la barre de recherche par ville avec son champ de saisie,
+    les filtres par catégorie puis les infos supplémentaires.
+    Les boutons de catégorie de filtres affiche un fond de couleur différente au survol. 
+    Les différents conteneurs sont disposés en colonne et les éléments contenus eux sont disposés en ligne. */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -171,9 +180,15 @@ p {
     margin-right: 21px;
 }
 .section_articles_hebergements{
+    /* Ici on dispose les 2 conteneurs "Hébergements à 'ville recherchée'" (ici Marseille pour l'exemple) 
+    et "Les plus populaires" côte à côte, le second étant plus serré sur la droite. Les deux sont sur fond gris et disposes leurs éléments contenus en colonne.
+    Les cartes contenues sont sur fond blanc avec un effet d'ombrage pour une meilleure lecture. 
+    Toute les cartes accueillent un lien sur l'ensemble du conteneur "Card" (vide pour cette première version) vers la page du logement/activité en question.
+    Pour ce faire nous avons besoin d'une position relative pour la carte et absolue pour le lien. */
     display: flex;
 }
 .section_hebergements_ville{
+    /* Les cartes contenus sont disposées sur 2 lignes pour un affichage harmonieux. */
     width: 880px;
     height: 626px;
     background-color: #F2F2F2;
@@ -225,6 +240,10 @@ p {
     align-self: center;
 }
 .card {
+    /* Voici nos premières cartes, celles des logements recherchés par ville. 
+    Toutes les cartes sont relativements similaires, mais les réglages varient un peu selon le conteneur pour mieux s'intégrer dans la mise en page.
+    Pour celles-ci, On affiche le tout en colonne, en commençant par l'image du logement qui prendra toute la largeur disponible moins la marge, 
+    suivi du titre du logement, du descriptif puis enfin de la notation réprésentées par des étoiles bleus et grise*/
     width: 246px;
     height: 199px;
     max-height: 199px;
@@ -269,6 +288,9 @@ p {
     margin-bottom: 0px;
 }
 .card_pop {
+    /* Voici nos seconds type de carte, pour les logements du conteneur "les plus populaires". 
+    Ici les différences avec les premières sont: image disposé sur le tiers gauche de la carte, 
+    descriptif (titre + texte + notation) disposé sur les 2/3 de droite en colonne. */
     width: 343px;
     height: 144px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -304,11 +326,14 @@ p {
     color: #F2F2F2;
 }
 .container_activites {
+    /* Ici nous changeons de section, mais nous utiliserons encore des cartes. Celles-ci seront disposés en ligne avec un espacement minimum entre chacune. */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .card_activ {
+    /* les cartes d'activités en question. Celles-ci sont un peu plus différente des précédentes. 
+    L'image compose l'essentiel de la carte, et le descriptif ne contient qu'un simple titre */
     width: 302px;
     height: 444px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -319,6 +344,7 @@ p {
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-right: 20px;
 }
 .card_activ img {
     width: 100%;
@@ -334,6 +360,10 @@ p {
     align-items: flex-start;
 }
 .container_footer {
+    /* Nous voici dans la dernière partie du site, le footer. 
+    Ici nous avons 3 conteneurs disposés en ligne, avec une marge réglée pour un affichage non-centré, 
+    disposés plutôt sur la gauche mais avec un espacement défini de manière à prendre l'essentiel de l'espace disponible.
+    Les éléments contenus sont disposés quant à eux en colonne. Ces contenus sont composés d'un titre puis des liens (non fonctionnel pour cette version) */
     display: flex;
     justify-content: space-around;
     width: 1339px;
@@ -364,7 +394,11 @@ p {
 .fa-magnifying-glass {
     color: white;
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Voici notre premier point de rupture, situé à 992px de largeur pour définir le passage en mode tablette. Ici la disposition comporte quelques changements:
+    - Les conteneurs "Hébergements " et  "les plus populaires" sont disposés cette fois en colonne. 
+    -Le conteneur "Les plus populaires dispose ses éléments en ligne.
+    - La taille des cartes, des images et de la police d'écriture a été globalement réduite pour mieux correspondre à ce format. */
     .section_articles_hebergements{
         display: flex;
         flex-direction: column;
@@ -429,7 +463,24 @@ p {
         font-size: small;
     }
 }
-@media screen and ( max-width: 768px) {
+@media only screen and ( max-width: 768px) {
+    /* Voici le second point de rupture situé à 768px. Ici on adapte le site à un format mobile.
+    Les changements sont plus important ici. 
+    Une attention particulière a été donnée à l'adaptabilité de la largeur des conteneurs/éléments/ espacements 
+    pour mieux convenir aux différents tailles d'écrans possible.
+    Voici la liste des changements:
+    - Le header dispose son logo au centre tout en haut, et les liens de navigations en dessous. 
+    Ceux-ci prennent chacun la moitié de l'écran et cette fois la barre bleue générée est située en dessous.
+    - Dans le conteneur des outils de recherches, la barre de recherche est centrée, 
+    et son bouton recherche comporte désormais un logo au lieu du mot "rechercher". 
+    La largeur de cet élément est adaptée en conséquence.
+    -Les boutons de filtres par catégorie sont cette fois disposé sur deux lignes, et centrés.
+    - Le conteneur "Les plus populaires" est cette fois affiché avant "Hébergements", toujours en colonne.
+    Les éléments contenus dans ces deux conteneurs sont tous disposés en colonne.
+    - Les cartes ont vues leurs dimensions réajustées pour convenir au format.
+    - Les cartes de la section Activité sont cette fois disposés en colonne.
+    - Le footer est lui aussi disposé en colonne.
+    -Les tailles de police, de conteneurs etc ont été globalement réajustés pour une meilleure lisibilité.*/
     .header{
         display: flex;
         flex-direction: column;
@@ -577,7 +628,7 @@ p {
     .section_activités {
         flex-direction: column;
         width: 90%;
-        height: 1300px;
+        height: 1100px;
         margin-left: 15%;
     }
     .section_activités h2 {
@@ -587,10 +638,14 @@ p {
     .container_activites {
         flex-direction: column;
         width: 80%;
-        height: 1200px;
+        height: 1000px;
     }
     .card_activ {
         width: 100%;
+        height: 190px;
+    }
+    .card_activ img {
+        height: 134px;
     }
     .container_footer {
         flex-direction: column;
