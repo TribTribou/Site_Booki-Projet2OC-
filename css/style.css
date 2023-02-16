@@ -463,7 +463,7 @@ p {
         font-size: small;
     }
 }
-@media only screen and ( max-width: 768px) {
+@media screen and ( max-width: 768px) {
     /* Voici le second point de rupture situé à 768px. Ici on adapte le site à un format mobile.
     Les changements sont plus important ici. 
     Une attention particulière a été donnée à l'adaptabilité de la largeur des conteneurs/éléments/ espacements 
